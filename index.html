@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Detecticy</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+	<!--we had linked our css file-->
+</head>
+<body>
+	<div class="full-page">
+		<div class="navbar">
+	
+			<!--navigation ended-->
+		</div>
+	<form method="post", action="{{ url_for('index') }}">
+		<textarea name="review" class="textarea" placeholder="Insert Review"></textarea>
+		<button type='submit'class='submit-btn'>Submitt</button>
+	</form>
+	{% if result %}
+		{% if result == 'OR' %}
+			<div>
+				<h3 id='res'>Review: Real</h3>
+			</div>
+		{% elif result == 'CG' %}
+			<div>
+				<h3 id='res'>Review: Fake</h3>
+			</div>
+		{% endif %}
+	{% endif %}
+</div>
+</body>
+</html>	

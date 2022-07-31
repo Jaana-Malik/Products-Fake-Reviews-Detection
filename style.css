@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.full-page{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(61, 145, 75, 0.4),rgba(0,0,0,0.4));
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+/*background image and position*/
+.navbar
+{
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 50px;
+padding-right: 30px;
+padding-top: 50px;
+}
+/*dimensions of the navigation bar*/
+  
+.submit-btn
+{
+	width: 15%;
+	padding: 10px 30px;
+	padding-top: 10px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	
+}
+	.submit-btn:hover {
+         transform:scale(1.1);
+		background-color: rgb(182, 46, 46);
+	  }
+textarea{
+	position: center;
+	background-color: bisque;
+	border:5px double #96715b;
+	width: 40%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	padding-bottom: 10%;
+	margin-top: 10%;
+	border: 1;
+	
+}
+
+#res {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+}
